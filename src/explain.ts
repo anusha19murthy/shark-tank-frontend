@@ -9,7 +9,9 @@ export async function explainPrediction(
   input: PredictionInput,
   result: PredictionResult
 ): Promise<AIExplanation> {
-  const response = await fetch('http://localhost:8000/explain', {
+  const response = await fetch(
+  'https://shark-tank-backend-4ufm.onrender.com/explain',
+  {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({

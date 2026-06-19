@@ -12,7 +12,9 @@ export interface PredictionResult {
 }
 
 export async function predict(input: PredictionInput): Promise<PredictionResult> {
-  const response = await fetch('http://localhost:8000/predict', {
+  const response = await fetch(
+  'https://shark-tank-backend-4ufm.onrender.com/predict',
+  {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -22,7 +24,8 @@ export async function predict(input: PredictionInput): Promise<PredictionResult>
       gender: input.gender,
       team_type: input.teamType,
     }),
-  });
+  }
+);
 
   if (!response.ok) {
     const error = await response.json();

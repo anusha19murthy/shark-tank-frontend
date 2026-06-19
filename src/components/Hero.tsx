@@ -123,7 +123,7 @@ export default function Hero() {
             className="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed"
           >
             Trained on 1,400+ real Shark Tank pitches, this model will predict whether
-            your startup would walk away with a deal or walk the plank. So let's see what the shark will have to say. Would Queen of QVC make a deal or Mr. Wonderful will slam it?
+            your startup would walk away with a deal or walk the plank. So let's see what the shark will have to say. Would the Queen of QVC make a deal or would Mr. Wonderful slam it?
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-10">
